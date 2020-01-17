@@ -101,16 +101,16 @@ public class SignaturePad extends View {
 
     }
 
-    @Override
-    protected Parcelable onSaveInstanceState() {
-        Bundle bundle = new Bundle();
-        bundle.putParcelable("superState", super.onSaveInstanceState());
-        if (this.mHasEditState == null || this.mHasEditState) {
-            this.mBitmapSavedState = this.getTransparentSignatureBitmap();
-        }
-        bundle.putParcelable("signatureBitmap", this.mBitmapSavedState);
-        return bundle;
-    }
+//    @Override
+//    protected Parcelable onSaveInstanceState() {
+//        Bundle bundle = new Bundle();
+//        bundle.putParcelable("superState", super.onSaveInstanceState());
+//        if (this.mHasEditState == null || this.mHasEditState) {
+//            this.mBitmapSavedState = this.getTransparentSignatureBitmap();
+//        }
+//        bundle.putParcelable("signatureBitmap", this.mBitmapSavedState);
+//        return bundle;
+//    }
 
     @Override
     protected void onRestoreInstanceState(Parcelable state) {
