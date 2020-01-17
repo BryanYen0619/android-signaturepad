@@ -25,8 +25,8 @@ android {
 }
 
 bintray {
-    user = properties.getProperty("bintray.user")
-    key = properties.getProperty("bintray.apikey")
+    user = project.user
+    key = project.apikey
 
     configurations = ['archives']
     pkg {
